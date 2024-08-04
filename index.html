@@ -46,7 +46,7 @@
                     <p>Ovšem pokud chceš mít i <strong>FTF</strong>, tak podmínky jsou následující:</p>
                         <ul>
                             <li>musí ti stačit 1 pokus</li>
-                            <li>každé kolo má určitý čas k dosažení FTF</li>
+                            <li>musíš to stihnout do určitého času</li>
                         </ul> 
                         <p>... takže výsledek se dozvíš až po dohrání.</p>
                 </aside>
@@ -139,9 +139,21 @@
             </section>
         </main>
 
-        <footer>
+        <!-- {% include "footer.html" %} -->
 
+        <footer>
+            <div class="container">
+                <p class="copyright">
+                    <span>&copy;
+                        <span id="displayDateYear"></span>
+                        <a href="https://mar6wen8.github.io/MarWen" target="_blank" class="email">MarWen</a>
+                    </span> 
+                </p>
+            </div>
         </footer>
+
+        <script src="static/js/script.js"></script>
+        <!-- <script src="{% static '/js/script.js' %}"></script> -->
 
     </body>
 </html>
